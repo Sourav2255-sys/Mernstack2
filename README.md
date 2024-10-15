@@ -1,11 +1,11 @@
 # Mernstack2
 Backend
-mkdir student-details-app
-cd student-details-app
+create student-backend
+cd student-backend
 npm init -y
-npm install express mongoose body-parser cors
+npm install express mongoose body-parser cors nodemon
 //Create express server
-Create a file called index.js in the root directory.
+Create a file called app.js in the root directory.
 
 
 const express = require('express');
@@ -50,7 +50,7 @@ app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`)
 
 Start MongoDB and Express Server
 mongod
-node index.js
+nodemon app.js
 Frontend
 npx create-react-app frontend
 cd frontend
